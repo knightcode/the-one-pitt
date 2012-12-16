@@ -31,7 +31,6 @@ public class PassiveRouter extends MessageRouter {
 		super.update();
 	}
 
-	@Override
 	public void changedConnection(Connection con) {
 		// -"-
 	}

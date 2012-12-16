@@ -103,7 +103,7 @@ public class SprayAndWaitRouter extends ActiveRouter {
 		
 		if (copiesLeft.size() > 0) {
 			/* try to send those messages */
-			this.tryMessagesToConnections(copiesLeft, getConnections());
+			this.tryMessagesToConnections(copiesLeft, getHost().getConnections());
 		}
 	}
 	
