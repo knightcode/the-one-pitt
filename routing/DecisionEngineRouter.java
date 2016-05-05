@@ -146,6 +146,7 @@ public class DecisionEngineRouter extends ActiveRouter
 			if(m.getId().equals("M14"))
 				System.out.println("Host: " + getHost() + "Creating M14");
 			makeRoomForNewMessage(m.getSize());
+            m.setTtl(this.msgTtl);
 			addToMessages(m, true);
 			
 			findConnectionsForNewMessage(m, getHost());
