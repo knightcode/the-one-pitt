@@ -167,7 +167,7 @@ public abstract class MessageRouter {
 	 * Informs the router about change in connections state.
 	 * @param con The connection that changed
 	 */
-	//public abstract void changedConnection(Connection con);	
+	public abstract void changedConnection(Connection con);	
 	
 	/**
 	 * Returns a message by ID.
