@@ -151,11 +151,11 @@ public class DTNHost implements Comparable<DTNHost>, Iterable<Connection> {
 	 * @param con  The connection object whose state changed
 	 */
 	public void connectionUp(Connection con) {
-		this.router.connectionUp(con);
+		this.router.changedConnection(con);
 	}
 
 	public void connectionDown(Connection con) {
-		this.router.connectionDown(con);
+		this.router.changedConnection(con);
 	}
 
 	/**
